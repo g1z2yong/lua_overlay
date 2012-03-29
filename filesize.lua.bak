@@ -1,0 +1,8 @@
+function fsize()
+	local r=f:seek("end")
+	return r
+end
+
+f = assert(io.open(arg[1], "rb"))
+
+print ('File size :'..fsize())
